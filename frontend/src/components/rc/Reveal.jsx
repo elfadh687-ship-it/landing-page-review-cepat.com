@@ -17,7 +17,7 @@ export const MaskLines = ({ lines, as = "h2", className = "", delay = 0, onLoad,
     >
       {lines.map((l, i) => (
         <span key={i} className="block overflow-hidden pb-[0.1em] -mb-[0.1em]">
-          <motion.span className="block" variants={lineVariant}>{l}</motion.span>
+          <motion.span className="block" variants={lineVariant}>{l}</motion.span>{" "}
         </span>
       ))}
     </Tag>
