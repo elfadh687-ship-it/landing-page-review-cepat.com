@@ -17,6 +17,12 @@ Buat halaman pendaratan reviewcepat.com merefer pada DESIGN.md yang diupload, ja
 - Glass floating navbar (hide on scroll down), mobile menu, all CTAs → WhatsApp placeholder.
 - Tested: 48/50 checks passed; 2 minor issues fixed (mobile overflow, h1 text spacing).
 
+## Implemented (2026-07)
+- Hero motion graphics "video" (4s loop, code-driven framer-motion, bukan file video) menggantikan panggung device 3D di kanan hero produk. Files: `components/rc/HeroMotion.jsx` (stage, chrome: label, timecode, progress bar, captions, cycle timer berbasis useInView) + `HeroMotionScenes.jsx` (DeviceCard, TapRipples, TapChip, Phone+ReviewSheet, Dashboard, CustomersBadge, Counter, windowKF). Copy di `HERO_MOTION` (content.js).
+- Timeline: 0–1.1s tap HP ke device + ripple NFC → 1.1–2.1s Google Review terbuka, 5 bintang terisi, "Terkirim" → 2.1–3.0s dashboard ulasan 128→342, rating 4.3→4.9, grafik → 3.0–4s Penjualan +38%, badge pelanggan baru → fade & loop.
+- Catatan teknis: keyframe multi-segmen harus pakai `ease` array per segmen (single ease diterapkan global → timing meleset). Ukuran memakai unit container query (cqw) agar proporsional di mobile.
+- DeviceStage.jsx dihapus (tidak terpakai).
+
 ## Backlog
 - P1: Replace placeholder WA/email/address; real pricing/packages section
 - P1: Real testimonials/logos when supplied (no fabrication per DESIGN.md)

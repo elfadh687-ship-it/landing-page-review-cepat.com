@@ -25,4 +25,25 @@ export const IMG = {
   multi: "/assets/rc_multi.jpg",
 };
 
+export const HERO_MOTION = {
+  label: "Cara kerja · 4 detik",
+  business: "Kopi Senja",
+  businessSub: "Beri rating & ulasan",
+  submit: "Kirim ulasan",
+  sent: "Terkirim",
+  tapChip: "Tap NFC",
+  panelTitle: "Profil Bisnis Google",
+  reviewsLabel: "ulasan",
+  salesLabel: "Penjualan",
+  salesDelta: "+38%",
+  customersLabel: "Pelanggan baru",
+  customersDelta: "+24 minggu ini",
+  captions: [
+    "Pelanggan tap HP ke device Reviewcepat",
+    "Google Review langsung terbuka, bintang terisi",
+    "Jumlah ulasan & rating bisnis naik",
+    "Lebih dipercaya, penjualan ikut naik",
+  ],
+};
+
 export const CATEGORIES = ["Restaurant", "Coffee Shop", "Salon", "Barbershop", "Clinic", "Hotel", "Workshop", "Retail", "UMKM"];

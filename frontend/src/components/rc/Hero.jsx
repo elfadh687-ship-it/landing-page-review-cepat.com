@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { MaskLines, FadeUp } from "./Reveal";
 import { PrimaryButton, SecondaryButton } from "./Buttons";
-import { DeviceStage } from "./DeviceStage";
+import { HeroMotion } from "./HeroMotion";
 import { ProductFrame } from "./ProductFrame";
 import { scrollToId } from "./SmoothScroll";
 import { IMG, waLink } from "@/lib/content";
@@ -43,7 +43,7 @@ export const Hero = () => (
         </FadeUp>
       </div>
       <div className="lg:col-span-6">
-        <DeviceStage />
+        <HeroMotion />
       </div>
     </div>
     <motion.div className="mt-20 md:mt-28">
