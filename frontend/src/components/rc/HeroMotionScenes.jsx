@@ -50,11 +50,11 @@ export const DeviceCard = () => (
   <motion.div
     className="absolute left-[6%] top-[18%] w-[44%] will-change-transform"
     style={{ rotate: -6 }}
-    animate={{ opacity: [0, 1, 1, 0.28, 0.28], scale: [0.9, 1, 1, 0.9, 0.9], x: ["0%", "0%", "0%", "-14%", "-14%"] }}
+    animate={{ opacity: [0, 1, 1, 0.45, 0.45], scale: [0.9, 1, 1, 0.9, 0.9], x: ["0%", "0%", "0%", "-14%", "-14%"] }}
     transition={{ duration: DUR, times: [0, 0.1, 1.1 / DUR, 1.5 / DUR, 1], ease: [EASE, "linear", EASE, "linear"] }}
     data-testid="hero-motion-device"
   >
-    <div className="absolute inset-0 translate-y-[3%] rounded-[6%] bg-black/60 blur-xl" aria-hidden />
+    <div className="absolute inset-0 translate-y-[4%] rounded-[6%] bg-black/25 blur-xl" aria-hidden />
     <img src={IMG.device} alt="" draggable={false} className="relative w-full select-none rounded-[6%] ring-1 ring-white/10" />
   </motion.div>
 );
@@ -95,7 +95,7 @@ export const Phone = () => (
     transition={{ duration: DUR, times: [0, 0.65 / DUR, 1.1 / DUR, 1.5 / DUR, 2.1 / DUR, 2.5 / DUR, 1], ease: [EASE, "linear", EASE, "linear", EASE, "linear"] }}
     data-testid="hero-motion-phone"
   >
-    <div className="relative h-full w-full rounded-[18%/8.5%] bg-[#1c1c1f] p-[5%] shadow-[0_40px_70px_-20px_rgba(0,0,0,0.8)] ring-1 ring-white/15">
+    <div className="relative h-full w-full rounded-[18%/8.5%] bg-[#1c1c1f] p-[5%] shadow-[0_40px_70px_-20px_rgba(0,0,0,0.45)] ring-1 ring-black/10">
       <div className="relative h-full w-full overflow-hidden rounded-[14%/6.6%] bg-[#0f0f11]">
         <div className="absolute left-1/2 top-[2.4%] z-20 h-[2.4%] w-[34%] -translate-x-1/2 rounded-full bg-[#1c1c1f]" />
         <motion.div className="absolute inset-0 grid place-items-center text-[#5ea8ff]" animate={{ opacity: [1, 1, 0] }} transition={{ duration: DUR, times: [0, 0.95 / DUR, 1.1 / DUR], ease: "linear" }}>
@@ -135,7 +135,7 @@ const ReviewSheet = () => (
 const BARS = [28, 36, 33, 46, 58, 74, 92];
 export const Dashboard = () => (
   <motion.div
-    className="absolute right-[5%] top-[12%] z-10 w-[46%] rounded-[3.6cqw] bg-white p-[3.6cqw] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.8)]"
+    className="absolute right-[5%] top-[12%] z-10 w-[46%] rounded-[3.6cqw] bg-white p-[3.6cqw] shadow-[0_40px_80px_-30px_rgba(0,0,0,0.35)] ring-1 ring-black/5"
     initial={{ opacity: 0, x: 60, scale: 0.96 }}
     animate={{ opacity: 1, x: 0, scale: 1 }}
     transition={at(2.1, 0.7)}
@@ -170,7 +170,7 @@ export const Dashboard = () => (
 
 const PEOPLE = [["AR", "#0071e3"], ["DW", "#1e8e3e"], ["SN", "#EA4335"], ["MK", "#FBBC04"]];
 export const CustomersBadge = () => (
-  <motion.div className="glass absolute bottom-[14%] left-[6%] z-20 flex items-center gap-[2.4cqw] rounded-[2.6cqw] bg-white/92 px-[2.6cqw] py-[1.8cqw]" initial={{ opacity: 0, scale: 0.7, y: 16 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={pop(3.1)} data-testid="hero-motion-customers">
+  <motion.div className="glass absolute bottom-[14%] left-[6%] z-20 flex items-center gap-[2.4cqw] rounded-[2.6cqw] bg-white/92 px-[2.6cqw] py-[1.8cqw] shadow-[0_20px_40px_-20px_rgba(0,0,0,0.3)]" initial={{ opacity: 0, scale: 0.7, y: 16 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={pop(3.1)} data-testid="hero-motion-customers">
     <div className="flex">
       {PEOPLE.map(([n, c], i) => (
         <motion.span key={n} className="-ml-[1cqw] first:ml-0 grid h-[5cqw] w-[5cqw] place-items-center rounded-full text-[1.6cqw] font-semibold text-white ring-[0.3cqw] ring-white" style={{ background: c }} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={pop(3.2 + i * 0.08)}>

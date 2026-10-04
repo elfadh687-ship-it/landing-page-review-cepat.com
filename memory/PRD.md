@@ -27,3 +27,4 @@ Buat halaman pendaratan reviewcepat.com merefer pada DESIGN.md yang diupload, ja
 - P1: Replace placeholder WA/email/address; real pricing/packages section
 - P1: Real testimonials/logos when supplied (no fabrication per DESIGN.md)
 - P2: Order form saved to DB, OG image tuning, analytics events on CTA
+- Hero motion: latar hitam panggung dihapus (transparan di atas putih) atas permintaan user; teks chrome/caption memakai warna ink/slate, dot-field gelap, bayangan dilembutkan.
