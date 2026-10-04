@@ -21,7 +21,7 @@ Buat halaman pendaratan reviewcepat.com merefer pada DESIGN.md yang diupload, ja
 - Hero motion graphics "video" (4s loop, code-driven framer-motion, bukan file video) menggantikan panggung device 3D di kanan hero produk. Files: `components/rc/HeroMotion.jsx` (stage, chrome: label, timecode, progress bar, captions, cycle timer berbasis useInView) + `HeroMotionScenes.jsx` (DeviceCard, TapRipples, TapChip, Phone+ReviewSheet, Dashboard, CustomersBadge, Counter, windowKF). Copy di `HERO_MOTION` (content.js).
 - Timeline: 0–1.1s tap HP ke device + ripple NFC → 1.1–2.1s Google Review terbuka, 5 bintang terisi, "Terkirim" → 2.1–3.0s dashboard ulasan 128→342, rating 4.3→4.9, grafik → 3.0–4s Penjualan +38%, badge pelanggan baru → fade & loop.
 - Catatan teknis: keyframe multi-segmen harus pakai `ease` array per segmen (single ease diterapkan global → timing meleset). Ukuran memakai unit container query (cqw) agar proporsional di mobile.
-- DeviceStage.jsx dihapus (tidak terpakai).
+- Business page: section Model Kemitraan diperluas dengan deskripsi detail (Reseller: modal Rp18.000, jual Rp50–70rb; White Label: maklon Rp20.000, min 10 pcs; Affiliator: komisi hingga 20%), bullet points, kotak highlight harga/komisi, CTA per model, dan blok bantuan "Belum yakin mana yang cocok?" → WhatsApp. Data di `PARTNER_MODELS` & `PARTNER_HELP` (content.js).
 
 ## Backlog
 - P1: Replace placeholder WA/email/address; real pricing/packages section
